@@ -1,15 +1,30 @@
 {
-  "name": "commenz",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "astro": "^2.3.0"
-  }
+	"name": "commenz",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/solid-js": "^2.1.0",
+		"@auth/core": "^0.7.0",
+		"@auth/solid-start": "^0.1.1",
+		"@next-auth/prisma-adapter": "^1.0.6",
+		"@prisma/client": "^4.13.0",
+		"@tanstack/solid-query": "5.0.0-alpha.21",
+		"@trpc/client": "^10.21.1",
+		"@trpc/server": "^10.21.1",
+		"astro": "^2.3.0",
+		"solid-js": "^1.7.3",
+		"solid-trpc": "0.0.11-rc.3",
+		"zod": "^3.21.4"
+	},
+	"devDependencies": {
+		"prisma": "^4.13.0",
+		"type-fest": "^3.8.0"
+	}
 }
