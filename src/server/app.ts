@@ -1,9 +1,8 @@
+import { site } from "./app/site"
 import { protectedProcedure, publicProcedure, router } from "./trpc"
 
 export const appRouter = router({
-	hello: protectedProcedure.query(({ ctx: { user } }) => {
-		return `Hello, ${user.name}`
-	}),
+	site,
 })
 
 // Export type router type signature,

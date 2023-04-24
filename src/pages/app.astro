@@ -1,0 +1,17 @@
+---
+import { getSession } from "@auth/solid-start"
+import { App } from "~/app/App"
+import Base from "~/layouts/Base.astro"
+import { authConfig, getUser } from "~/server/auth"
+
+const user = getUser(await getSession(Astro.request, authConfig))
+
+if (!user) {
+	return Astro.redirect("/login")
+}
+---
+
+<Base>
+	<div id="app"></div>
+	<script src="~/app/client.tsx"></script>
+</Base>
